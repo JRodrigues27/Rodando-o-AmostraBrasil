@@ -1,0 +1,2 @@
+# Rodando-o-AmostraBrasil
+Script do R idealizado para auxiliar os pesquisadores que não estão familiarizados com a linguagem a elaborarem suas Amostras aleatórias com o pacote AmostraBrasil. O Pacote AmostraBrasil foi criado pelos professores Ricardo Cordeiro, Celso Stephan e Maria Rita Donalisio. O Artigo sobre suas funcionalidades está dispoível em: http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0102-311X2016001106002
