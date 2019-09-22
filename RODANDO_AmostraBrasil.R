@@ -38,7 +38,7 @@
 
 # 6- LOCALIZE ESSE SCRIPT "RODANDO_AmostraBrasil.R"
 
-# 7- ABRA O ARQUIVO E SIGA PARA A LINHA 41 DESSE SCRIPT.
+# 7- ABRA O ARQUIVO E SIGA PARA A LINHA 54 DESSE SCRIPT.
 
 # O SIMBOLO # E UTILIZADO PARA INSERIR UMA INFORMACAO/LEMBRETE PARA
 ##OS LEITORES HUMANOS.
@@ -47,7 +47,7 @@
 # COMANDOS SAO TODAS AS LINHAS QUE NAO SAO PRECEDIDOS POR
 ##ESSE SIMBOLO (#) E SEM ESPACO NO INICIO.
 
-#PARA RODAR UM COMANDO, COLOQUE O CURSOR EM QUALQUER POSICAO
+#PARA RODAR OS COMANDOS, COLOQUE O CURSOR EM QUALQUER POSICAO
 ##DE SUA LINHA E PRESSIONE OS BOTOES CRTL + ENTER.
 # EXEMPLO:
 
@@ -85,13 +85,13 @@ install.packages("tidyverse")
 install.packages("writexl")
 install.packages("AmostraBrasil")
 
-########## PASSO 02 #######
+########## PASSO 03 #######
 #CARREGAR OS PACOTES INSTALADOS (CTRL + R):
 library(tidyverse)
 library(writexl)
 library(AmostraBrasil)
 
-########## PASSO 02 #######
+########## PASSO 04 #######
 # RODAR O PACOTE AMOSTRA E GRAVAR SUA AMOSTRA.
 # NA PROXIMA LINHA DE COMANDO VOCE VERA O SEGUINTE:
 # minha.amostra <- amostraBrasil(codibge= "CODIGO_MUNICIPIO", N="tamanho da amostra")
@@ -112,6 +112,7 @@ minha.amostra%>%
   separate(endIBGE, into = c("RUA", "NUMERO_CEP", "CIDADE_ESTADO", "PAIS"), ", " ) %>% 
   separate(NUMERO_CEP, into = c("NUMERO", "CEP"), " ") %>% 
   unite("ENDERECO", RUA, NUMERO, sep = ",") %>% 
+  mutate(VISITADO = "NAO") %>%    
   write_xlsx ("MINHA_AMOSTRA.xlsx")
 
 #PRONTO! SUA AMOSTRA FOI CONCLUIDA. ESTA SALVA NO SEU COMPUTADOR
@@ -138,6 +139,3 @@ getwd() #RESPONDE O DIRETORIO ONDE O ARQUIVO FOI SALVO NO SEU PC.
 ## ACESSE, COMENTE, EDITE EM:
 
 # https://github.com/JRodrigues27/Rodando-o-AmostraBrasil
-
-
-# R E VIDA!
