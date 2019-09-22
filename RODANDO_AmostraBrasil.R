@@ -1,4 +1,4 @@
-##################### RODANDO O PACOTE AMOSTRA BRASIL #################################
+##################### RODANDO O PACOTE AmostraBrasil #################################
 
 ########## OBJETIVO:
 # AUXILIAR PESQUISADORES QUE NAO CONHECEM O R A RODAR O PACOTE 
