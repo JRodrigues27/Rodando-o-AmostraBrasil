@@ -84,6 +84,8 @@ paste("OLA, TUDO BEM?") #PRESSIONE CTRL + ENTER NESSA LINHA.
 install.packages("tidyverse")
 install.packages("writexl")
 install.packages("AmostraBrasil")
+#DICA: VOCE SO PRECISA INSTALAR OS PACOTES UMA VEZ.
+## NAS PROXIMAS VEZES VOCE SO PRECISA CARREGAR OS PACOTES (PASSO 03).
 
 ########## PASSO 03 #######
 #CARREGAR OS PACOTES INSTALADOS (CTRL + ENTER):
