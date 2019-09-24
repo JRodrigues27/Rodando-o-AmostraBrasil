@@ -86,13 +86,14 @@ install.packages("writexl")
 install.packages("AmostraBrasil")
 
 ########## PASSO 03 #######
-#CARREGAR OS PACOTES INSTALADOS (CTRL + R):
+#CARREGAR OS PACOTES INSTALADOS (CTRL + ENTER):
 library(tidyverse)
 library(writexl)
 library(AmostraBrasil)
 
 ########## PASSO 04 #######
 # RODAR O PACOTE AMOSTRA E GRAVAR SUA AMOSTRA.
+
 # NA PROXIMA LINHA DE COMANDO VOCE VERA O SEGUINTE:
 # minha.amostra <- amostraBrasil(codibge= "CODIGO_MUNICIPIO", N="tamanho da amostra")
 # SUBSTITUA: 
